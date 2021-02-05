@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            font-family:monospace;
+            color: rgb(134, 42, 9);
+            font-size:40px
+        }
+        h2{
+            font-family: monospace;
+            font-size: 30px;
+        }
+
+        h3{
+            font-family: monospace;
+            margin:10px;
+
+        }
+        .box{
+            background-color: rgb(245, 239, 239);
+            width:400px;
+            height: 400px;
+            margin-left: 30px;
+            display: flex;
+        }
+    </style>
+        <script type="text/javascript">
+            let admin;
+            let name;
+            name= 'Lua';
+            admin=name; //Lua
+
+            function currAdmin(current){
+                displayAdmin=admin;
+            document.getElementById(current).innerHTML = displayAdmin;
+            }
+            
+        </script>
+    <title>JavaTesting</title>
+</head>
+<body onload="currAdmin('current');"">
+    <h1>JavaScript_Learning</h1>
+    <h2>TestingGround</h2>
+    <div class=box>
+    <h3> Administrador(a)<span id="current"></span></h3>
+    </div>
+</body>
+</html>
