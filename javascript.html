@@ -19,15 +19,17 @@
             margin:10px;
 
         }
-        .box{
+        #box{
             background-color: rgb(245, 239, 239);
             width:400px;
             height: 400px;
             margin-left: 30px;
             display: flex;
+            font-family: monospace;
         }
     </style>
         <script type="text/javascript">
+        
           
             let admin;
             let name;
@@ -41,15 +43,21 @@
             let human_planet = "earth";
             let curr_visitor = "name";
             console.log(human_planet);
+            let age=;
+            if(){console.log("You may enter!")}
+            else {console.log("You need teeth to enter.")};
+            let userName= prompt("Who is there?", "")
+
+
         </script>
    
 </head>
 <body onload="currAdmin('current');"">
     <h1>JavaScript_Learning</h1>
     <h2>TestingGround</h2>
-    <div class=box>
+    <div id=box>
     <h3> Administrador(a)<span id="current"></span></h3>
-        <script>
+        <!--
         // Your JavaScript goes here!
         console.log("Hello, World!")
         console.log(5*8)
@@ -64,8 +72,50 @@
         console.log(actual)
         let percentual=actual/max
         console.log(percentual)
-
-
+        let userName= prompt("Who is there?", "");
+        if (userName == "Lua"){ pass=prompt("Password:")}
+            else if(userName== null){alert("Cancelled")}
+            else if(userName!== "Lua"){alert("I dont\'t know you.")};
+        if (pass== "LEGOland"){alert("Welcome!")}
+        else if(!pass == "LEGOland"){ alert("Wrong Password")}
+        else if(pass==null){alert("Cancelled")};
+       
+        let javaOfficial= prompt( "Whats JavaScript official name? ");
+        if (javaOfficial === "ECMAScript"){alert("Right")}
+        
+        else{ alert("You don\'t know? \"ECMAScript!\"")};
+        -->
+        <script>
+           
+            let d = new Date();
+            let weekDay = d.getDay();
+            let day
+            
+            switch (weekDay){
+               case 1 : day ="Monday";
+            break;
+               case 2 : day = "Tuesday";
+            break;
+                case 3 : day = "Wednesday";
+            break;
+                case 4 :  day = "Thurday";
+            break;
+                case 5 : day = "Friday";
+            break;
+                case 6 :  day = "Saturday";
+            break;
+                case 7 :  day = "Sunday";
+            break;
+            default : null;
+            
+            }
+            alert(day)
+            
+            
+            
+            
+        
+        
 
       </script>
     </div>

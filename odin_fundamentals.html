@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<main>
+    <title> Odin Function's</title>
+</main>
+<body>
+    <script>
+        function add7(a){
+            return (a + 7)
+        }
+        function multiply(a,b){
+            return (a*b)
+        }
+        function capitalize(string){
+            firstLetter = string.charAt(0);
+            LETTER = firstLetter.toUpperCase();
+            newString = LETTER + string.substring(1,);
+            return newString;
+        }
+        function lastLetter(string) {
+            last_index = string.length-1;
+            while (last_index>=0){
+            last_digit = string.charAt(last_index);
+            if ( last_digit.toUpperCase() != last_digit.toLowerCase())
+                { return last_digit}
+                else { last_index = last_index-1;}
+            }   
+        }
+        
+
+    </script>
+</body>
+</html>
