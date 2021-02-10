@@ -1,7 +1,7 @@
-#Odin Project Problem Solving Exercice
-##Fizzzz
+# Odin Project Problem Solving Exercice
+## Fizzzz
 
-###The Problem
+### The Problem
 
 The user will input a number and the program should give back all the numbers untill that inputs value with 3 exceptions:
 
@@ -13,13 +13,13 @@ __Input__: one number;
 __Output__: array;
 (No need for UI)
 
-##Requested functions:
+## Requested functions:
 
 - Function that outputs sequence of number from input to zero; (proper method or loop??)
 - Conditional to evaluate if number is multiple of 3, 5 or both;
 - Display output.
 
-##Pseudo-Code:
+## Pseudo-Code:
 
 __Function Fizz__ checks if __currNumber__ divided by 3 has 0 remainder,
 being true results in __Fizz__;
