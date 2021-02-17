@@ -26,8 +26,15 @@
             margin-left: 30px;
             display: flex;
             font-family: monospace;
+            align-items: flex-start;
+            flex-direction: column;
+
         }
+        
+
+        
     </style>
+    <!--
         <script type="text/javascript">
         
           
@@ -50,13 +57,18 @@
 
 
         </script>
-   
+    -->
 </head>
 <body onload="currAdmin('current');"">
     <h1>JavaScript_Learning</h1>
     <h2>TestingGround</h2>
     <div id=box>
-    <h3> Administrador(a)<span id="current"></span></h3>
+        <h3> Administrador(a)<span id="current"></span></h3>
+        <h3 class="admitted"></h3>
+        <h3 class="refused"></h3>
+    </div>
+
+
         <!--
         // Your JavaScript goes here!
         console.log("Hello, World!")
@@ -110,7 +122,7 @@
             
             }
             alert(day)
-        -->
+        
         <script>
             let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
 
@@ -132,6 +144,45 @@ for (let i = 1; i <= answer; i++) {
         
 
       </script>
-    </div>
+    -->
+   <!--<script>
+
+let CountDown = document.getElementById('current')
+
+let para = document.createElement('p');
+
+
+for (let i=10; i>=0 ; i--){
+    let para = document.createElement('p')
+    if (i===10){ para.textContent = "CountDown";}
+    else if (i===0){ para.textContent = "BlastOff";}
+    else { para.textContent = i};
+    CountDown.appendChild(para)
+}
+
+    </script>
+-->
+<script>
+    const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+
+const admitted = document.querySelector('.admitted');
+const refused = document.querySelector('.refused');
+admitted.textContent = 'Admit: ';
+refused.textContent = 'Refuse: '
+
+//let i = 0;
+
+// refused.textContent += ;
+// admitted.textContent += ;
+
+for (let i=0; i <= people.length-1; i++){
+     if (people[i] === "Lola" || people[i] === "Phil")
+     {refused.textContent += people[i]+", "}
+    else { admitted.textContent += people[i] + ", "}
+}
+admitted.textContent = admitted.textContent.slice(0,admitted.textContent.length-2) + '.';
+refused.textContent = refused.textContent.slice(0,refused.textContent.length-2) + '.';
+</script>
+    
 </body>
 </html>
